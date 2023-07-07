@@ -3,7 +3,10 @@ import io from "socket.io-client";
 import { nanoid } from "nanoid";
 import "./App.css";
 
-const socket = io.connect("https://chat-app-duuf.onrender.com");
+// frontend hosted on netlify
+// backend hosted on render
+
+const socket = io.connect("https://chat-app-duuf.onrender.com"); // backend-url
 
 function App() {
   const [message, setMessage] = useState("");
