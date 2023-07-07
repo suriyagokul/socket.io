@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { nanoid } from "nanoid";
 import "./App.css";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://joyful-zabaione-c2dc91.netlify.app");
 
 function App() {
   const [message, setMessage] = useState("");
