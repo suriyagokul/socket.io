@@ -48,7 +48,10 @@ function App() {
         <div className="mb-5">
           {chat.map((item, index) => {
             return (
-              <p key={index}>
+              <p
+                key={index}
+                className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded"
+              >
                 User: {item.userId} Message: {item.message}
               </p>
             );
