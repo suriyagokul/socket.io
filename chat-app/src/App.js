@@ -49,7 +49,7 @@ function App() {
           {chat.map((item, index) => {
             return (
               <p key={index}>
-                {item.message} {item.userId}
+                User: {item.userId} Message: {item.message}
               </p>
             );
           })}
