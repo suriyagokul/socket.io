@@ -50,7 +50,8 @@ function App() {
             return (
               <p
                 key={index}
-                className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded"
+                className="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+                role="alert"
               >
                 User: {item.userId} Message: {item.message}
               </p>
