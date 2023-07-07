@@ -5,7 +5,7 @@ const httpServer = createServer();
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "*",
+    origin: "https://chathere-io.vercel.app/",
   },
 });
 
@@ -19,6 +19,6 @@ io.on("connection", (socket) => {
   });
 });
 
-httpServer.listen(5000, () => {
+httpServer.listen(process.env.PORT || 5000, () => {
   console.log(`Server is Connected on PORT 5000 roii`);
 });
